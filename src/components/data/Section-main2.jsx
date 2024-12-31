@@ -7,7 +7,7 @@ const SectionDm2 = [
         
     },
     {
-        Numbers: "10+",
+        Numbers: "50+",
         title: "Project Completed", 
     },
     {
