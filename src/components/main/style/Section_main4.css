@@ -14,7 +14,7 @@ animation: ani1 5s linear infinite;
 }
 .Section-main4-div1 nav{
     height: 1.2cm ;
-    width: 10.2cm;
+    width: 9cm;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -27,16 +27,37 @@ animation: ani1 5s linear infinite;
 
 
 .All{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 1cm;
+    width: 2.5cm;
+    border: none;
+    color: white;
+    font-size: 16px;
+    font-weight: 600;
+    border-radius: 20px;
+    background: none;
+}
+.All span{
+    position: absolute;
+    height: 1cm;
+    width: 2.28cm;
+    padding-top: 22px;
+    z-index: 2;
+}
+.All #Sm4-background-All{
     background: linear-gradient(90deg,blue,#0077b6,#90e0ef);
     height: 1cm;
-    width: 2.5cm;
-    border: none;
-    color: white;
-    font-size: 16px;
-    font-weight: 600;
+    width: 100%;
     border-radius: 20px;
+    position: relative;
+    padding-top: 0px;
 }
 .Apps{
+    display: flex;
+    justify-content: center;
+    align-items: center;
     height: 1cm;
     width: 2.5cm;
     border: none;
@@ -45,8 +66,26 @@ animation: ani1 5s linear infinite;
     font-size: 16px;
     font-weight: 600;
     border-radius: 20px;
+    z-index: 1;
+}
+.Apps span{
+    position: absolute;
+    height: 1cm;
+    width: 2.28cm;
+    padding-top: 22px;
+    z-index: 2;
+}
+.Apps #Sm4-background-Apps{
+    height: 1cm;
+    width: 100%;
+    border-radius: 20px;
+    position: relative;
+    padding-top: 0px;
 }
 .Webs{
+    display: flex;
+    justify-content: center;
+    align-items: center;
     height: 1cm;
     width: 2.5cm;
     border: none;
@@ -55,8 +94,26 @@ animation: ani1 5s linear infinite;
     font-size: 16px;
     font-weight: 600;
     border-radius: 20px;
+    z-index: 1;
+}
+.Webs span{
+position: absolute;
+height: 1cm;
+width: 2.3cm;
+padding-top: 22px;
+z-index: 2;
+}
+.Webs #Sm4-background-Webs{
+    height: 1cm;
+    width: 100%;
+    border-radius: 20px;
+    position: relative;
+    padding-top: 0px;
 }
 .UX-UI{
+    display: flex;
+    justify-content: center;
+    align-items: center;
     height: 1cm;
     width: 2.5cm;
     background: none;
@@ -65,4 +122,21 @@ animation: ani1 5s linear infinite;
     font-size: 16px;
     font-weight: 600;
     border-radius: 20px;
+    z-index: 1;
+    
+} 
+
+.UX-UI span{
+position: absolute;
+height: 1cm;
+width: 2.30cm;
+z-index: 2;
+padding-top: 22px;
+}
+.UX-UI #Sm4-background-UX_UI{
+    height: 1cm;
+    width: 100%;
+    border-radius: 20px;
+    position: relative;
+    padding-top: 0px;
 }
