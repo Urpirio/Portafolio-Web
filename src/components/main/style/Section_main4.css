@@ -25,7 +25,54 @@ animation: ani1 5s linear infinite;
 
 }
 
-
+@keyframes navTranstion1 {
+    from{
+        transform: translateX(80px);
+    }
+    to{
+        transform: translateX(0px);
+    }
+}
+@keyframes navTranstion1_Negative {
+    from{
+        transform: translateX(-85px);
+    }
+    to{
+        transform: translateX(0px);
+    }
+}
+@keyframes navTranstion2 {
+    from{
+        transform: translateX(170px);
+    }
+    to{
+        transform: translateX(0px);
+    }
+}
+@keyframes navTranstion2_Negative {
+    from{
+        transform: translateX(-170px);
+    }
+    to{
+        transform: translateX(0px);
+    }
+}
+@keyframes navTranstion3 {
+    from{
+        transform: translateX(250px);
+    }
+    to{
+        transform: translateX(0px);
+    }
+}
+@keyframes navTranstion3_Negative {
+    from{
+        transform: translateX(-250px);
+    }
+    to{
+        transform: translateX(0px);
+    }
+}
 .All{
     display: flex;
     justify-content: center;
@@ -53,6 +100,8 @@ animation: ani1 5s linear infinite;
     border-radius: 20px;
     position: relative;
     padding-top: 0px;
+    z-index: 1;
+    display: flex;
 }
 .Apps{
     display: flex;
@@ -66,7 +115,6 @@ animation: ani1 5s linear infinite;
     font-size: 16px;
     font-weight: 600;
     border-radius: 20px;
-    z-index: 1;
 }
 .Apps span{
     position: absolute;
@@ -76,11 +124,14 @@ animation: ani1 5s linear infinite;
     z-index: 2;
 }
 .Apps #Sm4-background-Apps{
+    background: linear-gradient(90deg,blue,#0077b6,#90e0ef);
     height: 1cm;
     width: 100%;
     border-radius: 20px;
     position: relative;
     padding-top: 0px;
+    display: none;
+    z-index: 1;
 }
 .Webs{
     display: flex;
@@ -94,7 +145,6 @@ animation: ani1 5s linear infinite;
     font-size: 16px;
     font-weight: 600;
     border-radius: 20px;
-    z-index: 1;
 }
 .Webs span{
 position: absolute;
@@ -104,11 +154,14 @@ padding-top: 22px;
 z-index: 2;
 }
 .Webs #Sm4-background-Webs{
+    background: linear-gradient(90deg,blue,#0077b6,#90e0ef);
     height: 1cm;
     width: 100%;
     border-radius: 20px;
     position: relative;
     padding-top: 0px;
+    display: none;
+    z-index: 1;
 }
 .UX-UI{
     display: flex;
@@ -122,7 +175,6 @@ z-index: 2;
     font-size: 16px;
     font-weight: 600;
     border-radius: 20px;
-    z-index: 1;
     
 } 
 
@@ -134,9 +186,12 @@ z-index: 2;
 padding-top: 22px;
 }
 .UX-UI #Sm4-background-UX_UI{
+    background: linear-gradient(90deg,blue,#0077b6,#90e0ef);
     height: 1cm;
     width: 100%;
     border-radius: 20px;
     position: relative;
     padding-top: 0px;
+    display: none;
+    z-index: 1;
 }
