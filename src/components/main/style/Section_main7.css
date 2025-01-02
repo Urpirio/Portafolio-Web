@@ -37,11 +37,12 @@
     align-items: center;
     gap: 50px;
     margin-bottom: 50px;
+    overflow: hidden;
 
 }
 .Card-services{
-    height: 11cm;
-    width:9cm;
+    height: 10cm;
+    width:8cm;
     display: flex;
     flex-flow: column;
     align-items: center;
@@ -53,7 +54,16 @@
     background: #000107;
     margin-top: 10px;
     margin-bottom: 10px;
-    
+}
+@keyframes infinite_transtion {
+    from{
+        opacity: 0;
+        transform: translateX(50px);
+    }
+    to{
+        opacity: 1;
+        transform: translateX(0px);
+    }
 }
 .Card-services-div1{
     display: flex;
@@ -81,4 +91,21 @@
     height: 200px;
     border-radius: 100%;
     margin-bottom: 10px;
+}
+
+#Cardservices1{
+
+    animation: infinite_transtion 0.5s;
+}
+#Cardservices2{
+
+    animation: infinite_transtion 0.5s;
+}
+#Cardservices3{
+display: none;
+animation: infinite_transtion 0.5s;
+}
+#Cardservices4{
+    display: none;
+    animation: infinite_transtion 0.5s;
 }
