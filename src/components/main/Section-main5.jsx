@@ -1,5 +1,5 @@
-import SectionDm5 from "../data/section-main5";
-import SectionDm55 from "../data/Section-main55";
+import SectionDm5 from "./Data/section-main5";
+import SectionDm5P2 from "./Data/Section-main5P2";
 import "./style/Section_main5.css"
 
 const Section_main5 = () => {
@@ -57,9 +57,9 @@ const Section_main5 = () => {
 
     const Div2 = () => {
 
-        const Divlist = SectionDm55.map( SM55 => {
+        const Divlist = SectionDm5P2.map( SM5P2 => {
             return(
-                <Subdiv2 Time = {SM55.time} title = {SM55.title} place = {SM55.place} />
+                <Subdiv2 Time = {SM5P2.time} title = {SM5P2.title} place = {SM5P2.place} />
             )
         })
 

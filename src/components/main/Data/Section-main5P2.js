@@ -1,4 +1,4 @@
-const SectionDm55 = [
+const SectionDm5P2 = [
     {
         time: "September 2022 - Present",
         title: "Software ingeniere",
@@ -15,4 +15,4 @@ const SectionDm55 = [
         place: "Galway, Irlanda",
     },
 ]
-export default SectionDm55
+export default SectionDm5P2

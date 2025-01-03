@@ -1,5 +1,5 @@
 import { flushSync } from "react-dom";
-import SectionDm7 from "../data/Section-main7";
+import SectionDm7 from "./Data/Section-main7";
 import "./style/Section_main7.css";
 
 const Section_main7 = () => {

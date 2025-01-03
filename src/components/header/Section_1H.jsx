@@ -1,9 +1,9 @@
-import SectionHeader from "../data/SectionHeader";
+import SectionDH1 from "./Data/SectionHeader";
 import "./style/Section_1H.css"
 
 const Section_1H = () => {
 
-    const headerlist = SectionHeader.map( H => {
+    const headerlist = SectionDH1.map( H => {
         return <img src={H.Logo}/>
     })
 

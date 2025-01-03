@@ -1,14 +1,14 @@
 import Section_1H from "../header/Section_1H";
 import Section_main from "../main/Section-main";
 import "./style/Structure.css";
-import SectionDm2 from "../data/Section-main2";
+import SectionDm2 from "./Data/Section-main2";
 import Section_main2 from "../main/Section-main2";
 import Section_main3 from "../main/Section-main3";
 // import SectionDm3 from "../data/Section-main3";
 import Section_main3P2 from "../main/Section-main3P2";
 import Section_main4 from "../main/Section-main4";
 import Section_main4P2 from "../main/Section-main4P2";
-import SectionDm4 from "../data/Section-main4";
+import SectionDm4 from "./Data/Section-main4";
 import Section_main5 from "../main/Section-main5";
 import Section_main6 from "../main/Section-main6";
 import Section_main7 from "../main/Section-main7";

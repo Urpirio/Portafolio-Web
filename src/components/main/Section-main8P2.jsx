@@ -1,4 +1,4 @@
-import SectionDm8P2 from "../data/Section-main8P2"
+import SectionDm8P2 from "./Data/Section-main8P2";
 
 const Section_main8P2 = () =>{
 

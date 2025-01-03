@@ -1,4 +1,4 @@
-import SectionDm6 from "../data/Section-main6";
+import SectionDm6 from "./Data/Section-main6";
 import "./style/Section_main6.css";
 
 const  Section_main6 = () => {
