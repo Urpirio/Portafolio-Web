@@ -84,7 +84,6 @@ var change_BtnSelect;
     };
 //funcion para enviar los datos a mi correo electronico.
 
-const resend = new Resend(`re_jHV15hRJ_5VJHeA4sSYAE2xqEneCEssRq`);
 
     const HandleSubmit = (e)=>{
 
@@ -92,12 +91,13 @@ const resend = new Resend(`re_jHV15hRJ_5VJHeA4sSYAE2xqEneCEssRq`);
         
         if (SendM == 5){
 
-            (async function () {
-                const { data, error } = await resend.emails.send({
-                  from: 'Acme <onboarding@resend.dev>',
-                  to: ['urpiriojunior@gmail.com'],
-                  subject: `${document.getElementById("btn-selection1").value}`,
-                  html: `<div>
+            const resend = new Resend('re_Na7wPU12_156wSF2W1djz6YAQWExxd8z1');
+            
+            resend.emails.send({
+              from: 'onboarding@resend.dev',
+              to: 'urpiriojunior@gmail.com',
+              subject: `${document.getElementById("btn-selection1").value}`,
+              html: `<div>
                   
                   <b>${document.getElementById("First_name").value} ${document.getElementById("Last_name").value}</b>
                   <br>
@@ -111,14 +111,7 @@ const resend = new Resend(`re_jHV15hRJ_5VJHeA4sSYAE2xqEneCEssRq`);
                   </p>
                   
                   </div>`,
-                });
-              
-                if (error) {
-                  return console.error({ error });
-                }
-              
-                console.log({ data });
-              })();
+            });
 
         }else{
             console.log("No se envio la informacion");
