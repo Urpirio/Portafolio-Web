@@ -1,7 +1,6 @@
 
 import Section_main8P2 from "./Section-main8P2";
 import React, {useState} from "react";
-import { Resend } from "resend";
 
 const  Section_main8 = () => {
     let ContainerSelect = document.getElementById("Btn-selection");
@@ -90,27 +89,13 @@ var change_BtnSelect;
         e.preventDefault();
         
         if (SendM == 5){
-
-            const resend = new Resend('re_Na7wPU12_156wSF2W1djz6YAQWExxd8z1');
-            
-            resend.emails.send({
-              from: 'onboarding@resend.dev',
-              to: 'urpiriojunior@gmail.com',
-              subject: `${document.getElementById("btn-selection1").value}`,
-              html: `<div>
-                  
-                  <b>${document.getElementById("First_name").value} ${document.getElementById("Last_name").value}</b>
-                  <br>
-                  <p>
-                  ${document.getElementById("message").value}
-                  </p>
-                  <br>
-                  <p><b>Numero de telefono del Cliente: ${document.getElementById("Email_address").value} </b> 
-                  <br>
-                  <b>Email del Cliente: ${document.getElementById("Phone_number").value} </b>
-                  </p>
-                  
-                  </div>`,
+            const serviceID = 'default_service';
+            const templateID = 'template_9m5c6k3';
+            emailjs.sendForm(serviceID, templateID, this)
+            .then(() => {
+                console.log("El envio de datos funciona")
+            }, (err) => {
+              alert(JSON.stringify(err));
             });
 
         }else{
