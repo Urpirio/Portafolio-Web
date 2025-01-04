@@ -1,9 +1,9 @@
-import { flushSync } from "react-dom";
+
 import Section_main8P2 from "./Section-main8P2";
 import React, {useState} from "react";
+import { Resend } from "resend";
 
 const  Section_main8 = () => {
-    let btn_Selection = "--Please choose a option--";
     let ContainerSelect = document.getElementById("Btn-selection");
     let Btn_sltn = document.getElementById("btn-selection1");
     let [btn_Selection1, setBtn_Selection] = useState(false);
@@ -82,31 +82,56 @@ var change_BtnSelect;
             change_BtnSelect1 = setInterval(BtnSelectO,1000);
         };
     };
+//funcion para enviar los datos a mi correo electronico.
+
+const resend = new Resend(`re_jHV15hRJ_5VJHeA4sSYAE2xqEneCEssRq`);
 
     const HandleSubmit = (e)=>{
 
         e.preventDefault();
         
         if (SendM == 5){
-            const serviceID = 'default_service';
-            const templateID = 'template_9m5c6k3';
-            emailjs.sendform(serviceID,templateID,this).then(()=>{
-                document.getElementById("GlobalError").style.display = "none";
-                document.getElementById("GlobalSend").style.display = "flex";
-            }
-        )
+
+            (async function () {
+                const { data, error } = await resend.emails.send({
+                  from: 'Acme <onboarding@resend.dev>',
+                  to: ['urpiriojunior@gmail.com'],
+                  subject: `${document.getElementById("btn-selection1").value}`,
+                  html: `<div>
+                  
+                  <b>${document.getElementById("First_name").value} ${document.getElementById("Last_name").value}</b>
+                  <br>
+                  <p>
+                  ${document.getElementById("message").value}
+                  </p>
+                  <br>
+                  <p><b>Numero de telefono del Cliente: ${document.getElementById("Email_address").value} </b> 
+                  <br>
+                  <b>Email del Cliente: ${document.getElementById("Phone_number").value} </b>
+                  </p>
+                  
+                  </div>`,
+                });
+              
+                if (error) {
+                  return console.error({ error });
+                }
+              
+                console.log({ data });
+              })();
+
         }else{
             console.log("No se envio la informacion");
         }
     };
 
-    /*Funcion para el envio del furmulario a una base de datos.*/ ;
+/*Funcion para el envio del furmulario a una base de datos.*/ ;
 var SendM;
 var SendError;
 const Sendmessage= () => {
 
  /*Input de la first Name */
- if (document.getElementById("inputtext1").value == ""){
+ if (document.getElementById("First_name").value == ""){
 
     document.getElementById("Error1").style.display ="flex";
     SendError = 1;
@@ -120,7 +145,7 @@ const Sendmessage= () => {
  };
  
  /*Input de Last Name */
- if (document.getElementById("inputtext2").value == ""){
+ if (document.getElementById("Last_name").value == ""){
 
     document.getElementById("Error2").style.display ="flex";
     SendError = SendError + 1;
@@ -134,7 +159,7 @@ const Sendmessage= () => {
   };
   
   /*Input de email address */
-  if (document.getElementById("inputtext3").value == ""){
+  if (document.getElementById("Email_address").value == ""){
 
     document.getElementById("Error3").style.display ="flex";
     SendError = SendError + 1;
@@ -148,7 +173,7 @@ const Sendmessage= () => {
   }
 
 /*Input de Phone Number */
-if (document.getElementById("inputtext4").value == ""){
+if (document.getElementById("Phone_number").value == ""){
     
     document.getElementById("Error4").style.display ="flex";
     SendError = SendError + 1;
@@ -165,7 +190,7 @@ if (document.getElementById("inputtext4").value == ""){
 
     document.getElementById("Error5").style.display ="none";
     SendM = SendM + 1;
-    console.log(`Valor4 de contador = ${SendM} `);
+    console.log(`Valor5 de contador = ${SendM} `);
 
   }else if(change_BtnSelect == false){
 
@@ -203,12 +228,12 @@ if (document.getElementById("inputtext4").value == ""){
                 <div className="Form-div2">
 
                     <div>
-                       <input  id="inputtext1" type="text" name="First_name" placeholder="First name" />
+                       <input  id="First_name" type="text" name="First_name" placeholder="First name" />
                         <p id="Error1" >Please fill out this field.</p>
                     </div>
 
                     <div>
-                       <input   id="inputtext2" type="text" name="Last_name" placeholder="Last name" />
+                       <input   id="Last_name" type="text" name="Last_name" placeholder="Last name" />
                         <p id="Error2">Please fill out this field.</p>
                     </div>
 
@@ -217,12 +242,12 @@ if (document.getElementById("inputtext4").value == ""){
                 <div className="form-div3" >
 
                     <div>
-                       <input   id="inputtext3" type="email" name="Email_address" placeholder="Email address"/>
+                       <input   id="Email_address" type="email" name="Email_address" placeholder="Email address"/>
                        <p id="Error3" >Please fill out this field.</p>
                     </div>
 
                     <div>
-                       <input   id="inputtext4" type="number" name="Phone number" placeholder="Phone number" />
+                       <input   id="Phone_number" type="number" name="Phone number" placeholder="Phone number" />
                        <p id="Error4" >Please fill out this field.</p>
                     </div>
 
@@ -230,7 +255,7 @@ if (document.getElementById("inputtext4").value == ""){
 
                 <div className="form-div4" >
 
-                    <button onClick={Btn_Selection} id="btn-selection1" >{btn_Selection}</button>
+                    <button onClick={Btn_Selection} id="btn-selection1" name="btn-selection1" >--Please choose a option--</button>
                     <p id="Error5">Please fill out this field.</p>
 
                  <div className="Btn-Selection" id="Btn-selection">
@@ -247,7 +272,7 @@ if (document.getElementById("inputtext4").value == ""){
 
                 <div className="form-div5">
 
-                    <textarea placeholder="Message" name="message"></textarea>
+                    <textarea placeholder="Message" id="message" name="message"></textarea>
                     <p></p>
 
                 </div>
