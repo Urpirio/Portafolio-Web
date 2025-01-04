@@ -91,11 +91,12 @@ var change_BtnSelect;
         if (SendM == 5){
             const serviceID = 'default_service';
             const templateID = 'template_9m5c6k3';
+            
             emailjs.sendForm(serviceID, templateID, this)
             .then(() => {
                 console.log("El envio de datos funciona")
-            }, (err) => {
-              alert(JSON.stringify(err));
+            }, () => {
+              alert("no sirve");
             });
 
         }else{
