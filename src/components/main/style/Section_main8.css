@@ -189,12 +189,27 @@
     color: white;
     background: linear-gradient(90deg,blue,#0077b6);
 }
-.form-btn-sendMessage div{
-    display: flex;
+#GlobalError{
     border: 2px solid orange;
     display: none;
+    padding-left: 20px;
+    padding-right: 20px;
+    padding-top: 5px;
+    padding-bottom: 5px;
 }
-.form-btn-sendMessage div p{
+#GlobalError p{
+    font-size: 14px;
+    font-weight: 600;
+}
+#GlobalSend{
+    border: 2px solid #38b000;
+    display: none;
+    padding-left: 20px;
+    padding-right: 20px;
+    padding-bottom: 5px;
+    padding-top: 5px;
+}
+#GlobalSend p{
     font-size: 14px;
     font-weight: 600;
 }
