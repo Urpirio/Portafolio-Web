@@ -96,7 +96,7 @@ var change_BtnSelect;
             .then(() => {
                 console.log("El envio de datos funciona")
             }, () => {
-              alert("no sirve");
+              console.log("no sirve");
             });
 
         }else{
@@ -188,7 +188,14 @@ if (document.getElementById("Phone_number").value == ""){
   if (SendError == 5){
     document.getElementById("GlobalError").style.display = "flex";
     document.getElementById("GlobalSend").style.display = "none";
-  }else if(SendM != 5){
+    document.getElementById("form").style.paddingBottom = "110px";
+    document.getElementById("form").style.paddingTop = "110px";
+  }else if(SendM == 5){
+    document.getElementById("GlobalError").style.display = "none";
+    document.getElementById("GlobalSend").style.display = "flex";
+    document.getElementById("form").style.paddingBottom = "60px";
+    document.getElementById("form").style.paddingTop = "60px";
+  }else{
     document.getElementById("GlobalSend").style.display = "none";
   };
 
@@ -197,7 +204,7 @@ if (document.getElementById("Phone_number").value == ""){
 };
     return(
         <section className="Section-main8" id="Section-main8">
-            <form onSubmit={HandleSubmit}  className="form" >
+            <form onSubmit={HandleSubmit}  className="form" id="form" >
 
                 <div className="form-div1">
                     <h1>Let’s work together!</h1>

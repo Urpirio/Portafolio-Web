@@ -195,3 +195,8 @@ padding-top: 22px;
     display: none;
     z-index: 1;
 }
+@media (max-width: 485px) and (max-height: 740px) {
+    .Section-main4-div1 h1{
+        font-size: 40px;
+    }
+}

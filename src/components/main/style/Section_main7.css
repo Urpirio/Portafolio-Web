@@ -38,10 +38,10 @@
     gap: 50px;
     margin-bottom: 50px;
     overflow: hidden;
+    flex-wrap: wrap;
 
 }
 .Card-services{
-    height: 10cm;
     width:8cm;
     display: flex;
     flex-flow: column;
@@ -108,4 +108,14 @@ animation: infinite_transtion 0.5s;
 #Cardservices4{
     display: none;
     animation: infinite_transtion 0.5s;
+}
+
+@media (max-width: 667px) and (max-height: 740px){
+    .Section-main7-div1 h1{
+        font-size: 30px;
+    }
+    .Section-main7-div1 p{
+        text-align: center;
+        font-size: 16px;
+    }
 }

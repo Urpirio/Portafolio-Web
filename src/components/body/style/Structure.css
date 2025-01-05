@@ -6,6 +6,8 @@ body{
 }
 /* Diseño de la section dos*/
 .Section-main2{
+    padding-top: 50px;
+    padding-bottom: 50px;
     display: flex;
     justify-content: space-around;
     align-items: center;
@@ -15,7 +17,6 @@ body{
     display: flex;
     align-items: center;
     width: 4cm;
-    margin-top: 20px;
 }
 .Section-main2 div h2{
     font-size: 70px;
@@ -30,6 +31,31 @@ body{
     font-size: 18px;
     font-weight: 500;
     color: white;
+}
+@media (max-width: 820px) and (min-width: 485px) {
+    .Section-main2{
+        padding-left: 30px;
+        padding-right: 30px;
+        width: none;
+    }
+    .Section-main2 div{
+        width: 6cm;
+    }
+    .Section-main2 div p{
+        text-align: left;
+    }
+}
+@media (max-width: 485px) and (max-height: 740px) {
+    .Section-main2{
+        flex-flow: column wrap;
+        justify-content: center;
+        align-items: center;
+    }
+    .Section-main2 div{
+        height: 3cm;
+        margin-right: 40px;
+    }
+    
 }
 /*Diseño de la parte 1 de la section tres*/
 .Section-main3{
@@ -162,6 +188,24 @@ body{
     font-size: 40px;
     rotate: -180deg;
 }
+@media (max-width: 820px) and (min-width: 485px) {
+    .Sm3-content-Noback div h1{
+        font-size: 20px;
+    }
+    .Sm3-content-Noback p{
+       font-size: 14px;
+    }
+}
+@media (max-width: 485px) and (max-height: 740px) {
+    .Section-main3-div1 h1{
+        font-size: 40px;
+        text-align: center;
+    }
+    .Sm3-content-Noback p{
+display: none;
+    }
+    
+}
 
 /*Diseño de la parte 2 de la section cuatro*/
 .Section-main4{
@@ -241,8 +285,37 @@ body{
 #NoContent img{
     margin-bottom: 20px;
     transition: 300ms;
+    margin-left: 0px;
+    margin-right: 0px ;
 }
 #NoContent:hover > img{
     height: 200px;
     margin-bottom: 100px;
+}
+@media (max-width: 667px){
+    .Cards-pages{
+        width: 10cm;
+        height: 6cm;
+    }
+    .Cards-pages img{
+        height: 200px;
+        border-bottom-left-radius: 10px;
+        border-bottom-right-radius: 10px;
+    }
+    .Cards-pages-div1{
+        height: 1.7cm;
+        width: 8.5cm;
+    }
+    .Cards-pages-div1 h1{
+        font-size: 20px;
+    }
+    .Cards-pages-div1 p{
+       font-size: 12px;
+    }
+    #NoContent:hover > img{
+        height: 120px;
+        margin-bottom: 100px;
+        margin-left: 72px;
+        margin-right:72px ;
+    }
 }

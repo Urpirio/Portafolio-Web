@@ -46,3 +46,18 @@ header{
     background-color: #0077b6;
     box-shadow: 1px 1px 10px 5px #0076b621;
 }
+@media (max-width:1100px) and (min-width: 820px) {
+    .S-header-div2 nav{
+        display: none;
+    }
+}
+@media (max-width: 820px) and (min-width: 667px) {
+    .S-header-div2 nav{
+        display: none;
+    }
+}
+@media (max-width: 667px) {
+    .S-header-div2 nav{
+        display: none;
+    }
+}

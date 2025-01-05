@@ -5,6 +5,7 @@
     background: black;
     padding-top: 60px;
     padding-bottom: 60px;
+    flex-wrap: wrap;
 }
 .Section-main-div1{
     display: flex;
@@ -132,4 +133,36 @@
 .Card-Experience h2{
     margin: 0;
     font-size: 16px;
+}
+@media (max-width: 485px) and (max-height: 740px)  {
+    .Section-main-div1{
+        justify-content: center;
+        align-items: center;
+    }
+    .Section-main-div2{
+        justify-content: center;
+        align-items: center;
+    }
+    .Section-main-div1 .H1 h1{
+        font-size: 40px;
+    }
+    .Section-main-div2 .H1 h1{
+        font-size: 40px;
+    }
+    .Card-Education{
+        width: 9cm;
+        height: 4.5cm;
+    }
+    .Card-Education-back{
+        position: relative;
+        z-index: 1;
+        height: 4.5cm;
+        width: 100%;
+    }
+
+    .Card-Experience{
+        height: 3.5cm;
+        width: 9cm;
+    }
+
 }
