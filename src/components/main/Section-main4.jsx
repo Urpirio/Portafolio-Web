@@ -163,10 +163,27 @@ const Section_main4 = () =>{
         <div className="Section-main4-div1">
             <h1>My Recent Works</h1>
             <nav>
-                <button id="All" onClick={All} className="All" ><span id="Sm4-background-All"></span><span>All</span></button>
-                <button id="Apps" onClick={Apps}  className="Apps" ><span id="Sm4-background-Apps"></span><span>Apps</span></button>
-                <button id="Webs" onClick={Webs} className="Webs" ><span id="Sm4-background-Webs"></span><span>Webs</span></button>
-                <button id="UX_UI" onClick={UX_UI} className="UX-UI" ><span id="Sm4-background-UX_UI"></span><span>UX/UI</span></button>
+
+                <button id="All" onClick={All} className="All" >
+                    <span id="Sm4-background-All"></span>
+                    <span>All</span>
+                </button>
+
+                <button id="Apps" onClick={Apps}  className="Apps" >
+                    <span id="Sm4-background-Apps"></span>
+                    <span>Apps</span>
+                </button>
+
+                <button id="Webs" onClick={Webs} className="Webs" >
+                    <span id="Sm4-background-Webs"></span>
+                    <span>Webs</span>
+                </button>
+
+                <button id="UX_UI" onClick={UX_UI} className="UX-UI" >
+                    <span id="Sm4-background-UX_UI">
+                    </span><span>UX/UI</span>
+                </button>
+
             </nav>
         </div>
     )
