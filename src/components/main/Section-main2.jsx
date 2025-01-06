@@ -10,7 +10,7 @@ const Section_main2 = (props) => {
              <div> 
                 <h2>{props.number}</h2>
                 <p>{props.title}</p>
-                </div>
+            </div>
     
     )
 }
