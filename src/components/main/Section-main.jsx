@@ -3,13 +3,13 @@ import  "./style/section_main.css";
 
 const Section_main = () =>{
 
-    const imgDev = SectionIMG.map( Dev => {
-        return <img src={Dev.ImagenDev} alt="Foto de Desarrollador" />
-    })
+    // const imgDev = SectionIMG.map( Dev => {
+    //     return <img src={Dev.ImagenDev} alt="Foto de Desarrollador" />
+    // })
 
-    const imgDev2 = SectionIMG.map( Dev => {
-        return <img src={Dev.ImagenDev} alt="Foto de Desarrollador" id="imgDev2" />
-    });
+    // const imgDev2 = SectionIMG.map( Dev => {
+    //     return <img src={Dev.ImagenDev} alt="Foto de Desarrollador" id="imgDev2" />
+    // });
 
     const Instagram = () => {
         window.location.href = 'https://www.instagram.com/urpirio.junior/';
@@ -29,7 +29,7 @@ const Section_main = () =>{
                 <div>
                     <h2>Soy Urpirio Junior</h2>
                     <h1>Desarrollador Web + Diseñador UX</h1>
-                    {imgDev2}
+                    <img src='https://media.licdn.com/dms/image/v2/D4E03AQGinxh1UMrRPA/profile-displayphoto-shrink_400_400/B4EZTbSFMlHUAk-/0/1738845738197?e=1746057600&v=beta&t=6NOeS7IXQOEzRgOrEOEaQXqS2tCiqM2iD5gmrAd7uyk' alt="Foto de Desarrollador" id="imgDev2" />
                     <p>Analizo problemas complejos de la experiencia del usuario para crear soluciones centradas en la integridad que conecten a miles de millones de personas.</p>
                 </div>
                 <div className="S-main-div1-div2">
@@ -42,7 +42,7 @@ const Section_main = () =>{
                 </div>
             </div>
             <div className="S-main-div2">
-                {imgDev}
+                <img src="https://media.licdn.com/dms/image/v2/D4E03AQGinxh1UMrRPA/profile-displayphoto-shrink_400_400/B4EZTbSFMlHUAk-/0/1738845738197?e=1746057600&v=beta&t=6NOeS7IXQOEzRgOrEOEaQXqS2tCiqM2iD5gmrAd7uyk" alt="" />
             </div>
         </section>
     )

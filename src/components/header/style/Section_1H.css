@@ -75,4 +75,7 @@ header{
     .S-header-div2 nav{
         display: none;
     }
+    .S-header-div2 div button{
+        display: none;
+    }
 }
