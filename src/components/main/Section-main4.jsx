@@ -161,12 +161,12 @@ const Section_main4 = () =>{
 
     return(
         <div className="Section-main4-div1">
-            <h1>My Recent Works</h1>
+            <h1>Mis proyectos recientes</h1>
             <nav>
 
                 <button id="All" onClick={All} className="All" >
                     <span id="Sm4-background-All"></span>
-                    <span>All</span>
+                    <span>Todos</span>
                 </button>
 
                 <button id="Apps" onClick={Apps}  className="Apps" >
