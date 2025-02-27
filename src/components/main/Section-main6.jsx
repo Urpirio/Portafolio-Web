@@ -24,8 +24,8 @@ const  Section_main6 = () => {
     return(
         <section className="Section-main6" id="Section-main6">
             <div className="Section-main6-div1" >
-                <h1>My Skills</h1>
-                <p>We put your ideas and thus your wishes in the form of a unique web project that inspires you and you customers.</p>
+                <h1>Mis habilidades</h1>
+                {/* <p>Plasmamos sus ideas y, por tanto, sus deseos en forma de un proyecto web único que le inspirará a usted y a sus clientes.</p> */}
             </div>
             <div className="Section-main6-Div2">
                 {skillsList}
