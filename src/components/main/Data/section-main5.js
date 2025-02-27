@@ -1,7 +1,7 @@
 const SectionDm5 = [
     {
-        time: "December 2024 - Present",
-        position: "Software Developer",
+        time: "Diciembre 2024 - Presente",
+        position: "Desarrollo de software",
         place: `UrpSoft`,
     },
 ]
