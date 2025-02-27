@@ -8,10 +8,6 @@ const Routes = createBrowserRouter([
     {
         path: "/",
         element: <Structure/>
-    },
-    {
-        path: "CheckData",
-        element: <div>CheckData</div>
     }
 ]);
 
