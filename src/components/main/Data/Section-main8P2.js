@@ -2,8 +2,8 @@ const SectionDm8P2 = [
     {
         TypeIcon: "bx bx-phone-call",
         TypeContact: "Phone",
-        Typelink: "tel:01 123 654 8096",
-        InfoContact: "+01 123 654 8096",
+        Typelink: "tel:+1(829)-586-2316",
+        InfoContact: "+1(829)-586-2316",
     },
     {
         TypeIcon: "bx bx-envelope",
