@@ -3,16 +3,16 @@
 const SectionDm2 = [
     {
         Numbers: "1+",
-        title: "Years of Experience",
+        title: "Años de experiencia",
         
     },
     {
         Numbers: "50+",
-        title: "Project Completed", 
+        title: "Proyecto completado", 
     },
     {
         Numbers: "50+",
-        title: "Happy Clients", 
+        title: "Clientes felices", 
     }
 ]
 
