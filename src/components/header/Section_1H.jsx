@@ -8,7 +8,23 @@ const Section_1H = () => {
     });
 
     const Contratame = () => {
-        window.location.href = '#Section-main8';
+        scroll(0,3300);
+    };
+     
+    // const Servicios = () => {
+    //     scroll(0,1000);
+    // };
+
+    const Proyectos = () => {
+        scroll(0,1100);
+    };
+
+    const Educacion = () => {
+        scroll(0,2150);
+    };
+
+    const Habilidades = () => {
+        scroll(0,2700);
     }
 
     return(
@@ -19,15 +35,15 @@ const Section_1H = () => {
             </div>
             <div className="S-header-div2">
                 <nav>
-                    <a href="#Section-main3">Servicios</a>
-                    <a href="#Section-main4">Proyectos</a>
-                    <a href="#Section-main5">Educacion</a>
-                    <a href="#Section-main6">Habilidades</a>
+                    {/* <a onClick={Servicios}>Servicios</a> */}
+                    <a onClick={Proyectos}>Proyectos</a>
+                    <a onClick={Educacion}>Educacion</a>
+                    <a onClick={Habilidades}>Habilidades</a>
                     {/* <a href="#Section-main7">Testimonials</a> */}
-                    <a href="#Section-main8">Contacto</a>
+                    {/* <a href="#Section-main8">Contacto</a> */}
                 </nav>
                 <div>
-                    <button onClick={Contratame}>¡Contrátame!</button>
+                    <button onClick={Contratame}>Contactame</button>
                 </div>
             </div>
         </section>
