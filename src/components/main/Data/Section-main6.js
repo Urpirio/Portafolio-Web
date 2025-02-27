@@ -2,32 +2,27 @@ const SectionDm6 = [
     {
         logo: "src/components/main/Img/Logos/figma.png",
         deplogo: "figma logo",
-        percent: "80%",
-        tecnology: "Figma",
+        percent: "Figma",
     },
     {
         logo: "src/components/main/Img/Logos/nodejs.png",
         deplogo: "nodejs logo",
-        percent: "90%",
-        tecnology: "Nodejs",
+        percent: "Nodejs",
     },
     {
         logo: "src/components/main/Img/Logos/react.png",
         deplogo: "React logo",
-        percent: "95%",
-        tecnology: "React",
+        percent: "React",
     },
     {
         logo: "src/components/main/Img/Logos/js.png",
         deplogo: "Javascripts logo",
-        percent: "95%",
-        tecnology: "Javascripts",
+        percent: "Javascripts",
     },
     {
         logo: "src/components/main/Img/Logos/python.webp",
         deplogo: "Python logo",
-        percent: "80%",
-        tecnology: "Python",
+        percent: "Python",
     }
 ]
 export default SectionDm6
