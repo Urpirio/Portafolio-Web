@@ -1,17 +1,17 @@
 const SectionDm5P2 = [
     {
-        time: "September 2022 - Present",
-        title: "Software ingeniere",
-        place: "University Dominico Americano",
+        time: "Septiembre 2022 - Presente",
+        title: "Ingeniero de software",
+        place: "Universidad Dominico Americano",
     },
     {
-        time: "Jenuary 2023 - november 2023",
-        title: "English immersion program",
+        time: "Enero 2023 - Noviembre 2023",
+        title: "Programa de inmersión en inglés",
         place: "Dominico Americano",
     },
     {
-        time: "January 2024 - April 2024",
-        title: "Diploma in Science,Technology and Engineering",
+        time: "Enero 2024 - Abril 2024",
+        title: "Diplomado en Ciencia, Tecnología e Ingeniería",
         place: "Galway, Irlanda",
     },
 ]
