@@ -84,24 +84,12 @@ var change_BtnSelect;
 //funcion para enviar los datos a mi correo electronico.
 
 
-    const HandleSubmit = (e)=>{
-
-        e.preventDefault();
-        
-        if (SendM == 5){
-            const serviceID = 'default_service';
-            const templateID = 'template_9m5c6k3';
-            
-            emailjs.sendForm(serviceID, templateID, this)
-            .then(() => {
-                console.log("El envio de datos funciona")
-            }, () => {
-              console.log("no sirve");
-            });
-
-        }else{
-            console.log("No se envio la informacion");
-        }
+    const HandleSubmit = ()=>{
+        document.getElementById('First_name').value = '';
+        document.getElementById('Last_name').value = '';
+        document.getElementById('Email_address').value = '';
+        document.getElementById('Phone_number').value = '';
+        document.getElementById('message').value = '';
     };
 
 /*Funcion para el envio del furmulario a una base de datos.*/ ;
@@ -204,11 +192,11 @@ if (document.getElementById("Phone_number").value == ""){
 };
     return(
         <section className="Section-main8" id="Section-main8">
-            <form onSubmit={HandleSubmit}  className="form" id="form" >
+            <form onSubmit={HandleSubmit}  action="https://formsubmit.co/urpiriojunior@gmail.com" method="POST"  className="form" id="form" >
 
                 <div className="form-div1">
-                    <h1>Let’s work together!</h1>
-                    <p>I design and code beautifully simple things and i love what i do. Just simple like that!</p>
+                    <h1>¡Trabajemos juntos!</h1>
+                    <p>Diseño y codifico cosas maravillosamente simples y amo lo que hago. ¡Así de simple!</p>
                 </div>
 
                 <div className="Form-div2">
@@ -239,7 +227,7 @@ if (document.getElementById("Phone_number").value == ""){
 
                 </div>
 
-                <div className="form-div4" >
+                {/* <div className="form-div4" >
 
                     <button onClick={Btn_Selection} id="btn-selection1" name="btn-selection1" >--Please choose a option--</button>
                     <p id="Error5">Please fill out this field.</p>
@@ -252,7 +240,7 @@ if (document.getElementById("Phone_number").value == ""){
                     <button onClick={AppDesign} className="btn-last-selection">App Design</button>
 
                  </div>
-                </div>
+                </div> */}
 
                 
 
