@@ -1,26 +1,26 @@
 const SectionDm6 = [
     {
-        logo: "src/components/main/Img/Logos/figma.png",
+        logo: "https://urpirio.github.io/ImagenesP/Img%20copy/Logos/figma.png",
         deplogo: "figma logo",
         percent: "Figma",
     },
     {
-        logo: "src/components/main/Img/Logos/nodejs.png",
+        logo: "https://urpirio.github.io/ImagenesP/Img%20copy/Logos/nodejs.png",
         deplogo: "nodejs logo",
         percent: "Nodejs",
     },
     {
-        logo: "src/components/main/Img/Logos/react.png",
+        logo: "https://urpirio.github.io/ImagenesP/Img%20copy/Logos/react.png",
         deplogo: "React logo",
         percent: "React",
     },
     {
-        logo: "src/components/main/Img/Logos/js.png",
+        logo: "https://urpirio.github.io/ImagenesP/Img%20copy/Logos/js.png",
         deplogo: "Javascripts logo",
         percent: "Javascripts",
     },
     {
-        logo: "src/components/main/Img/Logos/python.webp",
+        logo: "https://urpirio.github.io/ImagenesP/Img%20copy/Logos/python.webp",
         deplogo: "Python logo",
         percent: "Python",
     }
