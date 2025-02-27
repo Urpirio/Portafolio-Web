@@ -31,7 +31,7 @@ const Section_main5 = () => {
         return(
             <div className="Section-main-div1">
                 <div className="H1">
-                    <h1><i class='bx bxs-chip'></i>My Experience</h1>
+                    <h1><i class='bx bxs-chip'></i>Mi experiencia</h1>
                 </div>
                 {Divlist}
             </div>
@@ -66,7 +66,7 @@ const Section_main5 = () => {
         return(
             <div className="Section-main-div2">
                 <div className="H1" >
-                      <h1><i class='bx bx-crown'></i>My Education</h1>
+                      <h1><i class='bx bx-book-open'></i>Mi educación</h1>
                 </div>
                 {Divlist}
             </div>
