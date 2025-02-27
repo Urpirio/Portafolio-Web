@@ -29,7 +29,7 @@ const Section_main = () =>{
                 <div>
                     <h2>Soy Urpirio Junior</h2>
                     <h1>Desarrollador Web + Diseñador UX</h1>
-                    <img src='https://media.licdn.com/dms/image/v2/D4E03AQHjeBH8_1JH1A/profile-displayphoto-shrink_200_200/B4EZVIasOjHMAY-/0/1740676711914?e=2147483647&v=beta&t=9gKXTlIa2Q0O_gR31xz2Jwcd0VxYZnfbAuHbof3TQ3s' alt="Foto de Desarrollador" id="imgDev2" />
+                    <img src='https://urpirio.github.io/ImagenesP/WhatsApp%20Image%202025-02-27%20at%201.16.00%20PM.jpeg' alt="Foto de Desarrollador" id="imgDev2" />
                     <p>Analizo problemas complejos de la experiencia del usuario para crear soluciones centradas en la integridad que conecten a miles de millones de personas.</p>
                 </div>
                 <div className="S-main-div1-div2">
@@ -42,7 +42,7 @@ const Section_main = () =>{
                 </div>
             </div>
             <div className="S-main-div2">
-                <img src="https://media.licdn.com/dms/image/v2/D4E03AQHjeBH8_1JH1A/profile-displayphoto-shrink_200_200/B4EZVIasOjHMAY-/0/1740676711914?e=2147483647&v=beta&t=9gKXTlIa2Q0O_gR31xz2Jwcd0VxYZnfbAuHbof3TQ3s" alt="" />
+                <img src="https://urpirio.github.io/ImagenesP/WhatsApp%20Image%202025-02-27%20at%201.16.00%20PM.jpeg" alt="" />
             </div>
         </section>
     )
