@@ -56,6 +56,7 @@
     border: 2px solid #0077b6;
     background: none;
     transition: 300ms;
+    cursor: pointer;
 }
 .S-main-div1 button:hover{
     background: #0077b6;
@@ -94,6 +95,7 @@
     border-radius: 100%;
     border: 2px solid #0077b6;
     transition: 300ms ;
+    cursor: pointer;
 }
 .S-main-div1-div2 i:hover{
     background:#0077b6;
@@ -106,6 +108,7 @@
    border: 2px solid rgba(0, 0, 255, 0.404);
    box-shadow: 1px 1px 10px 5px rgba(0, 0, 255, 0.081);
    transition: 300ms;
+   cursor: pointer;
   
 }
 .S-main-div2 img:hover{
