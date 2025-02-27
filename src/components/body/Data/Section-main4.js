@@ -2,7 +2,7 @@ const SectionDm4 = [
     {
         class: "Web",
         pageName: "Kfc Dominican Republic",
-        summary: "Project was about precision and information....",
+        summary: " Haz clic aquí para obtener más detalles.",
         image: "src/components/body/img/Proyects/KFC.png",
         imgName: "Kfc img",
         link: "https://urpirio.github.io/KFC-RD/",
@@ -10,7 +10,7 @@ const SectionDm4 = [
     {
         class: "Web2",
         pageName: "Simply Company",
-        summary: "Project was about precision and information....",
+        summary: " Haz clic aquí para obtener más detalles.",
         image: "src/components/body/img/Proyects/SimplyCompany.png",
         imgName: "Simply Company img",
         link: "https://urpirio.github.io/Simply-Company/",
@@ -18,7 +18,7 @@ const SectionDm4 = [
     {
         class: "Web3",
         pageName: "G4 Devs",
-        summary: "Project was about precision and information....",
+        summary: "Haz clic aquí para obtener más detalles.",
         image: "src/components/body/img/Proyects/G4Devs.png",
         imgName: "G4 Devs img",
         link: "https://urpirio.github.io/UrpDev/",
@@ -26,7 +26,7 @@ const SectionDm4 = [
     {
         class: "Web4",
         pageName: "UrpSoft",
-        summary: "Project was about precision and information....",
+        summary: " Haz clic aquí para obtener más detalles.",
         image: "src/components/body/img/Proyects/UrpSoft.png",
         imgName: "UrpSoft I=img",
         link: "https://urpirio.github.io/UrpSoft-2.0/",
