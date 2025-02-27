@@ -5,7 +5,7 @@
     padding-top: 40px;
     padding-bottom: 40px;
     gap: 40px;
-    background: #000107 ;
+    background: black ;
     color: white;
     flex-wrap: wrap;
 }
@@ -20,7 +20,7 @@
     border-radius: 20px;
     box-shadow: 1px 1px 10px 10px rgba(0, 0, 255, 0.052);
     gap: 30px;
-    background-color: black;
+    background-color: #000107;
     color: white;
     
 }

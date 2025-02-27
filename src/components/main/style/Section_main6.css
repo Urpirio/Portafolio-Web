@@ -5,6 +5,7 @@
     align-items: center;
     background-color: #000107;
     color: white;
+    padding: 20px;
 }
 .Section-main6-div1{
     display: flex;
@@ -19,6 +20,7 @@
     background-clip: text;
     background-size: 500%;
     animation: ani1 5s linear infinite;
+    margin: 0;
 }
 .Section-main6-div1 p{
 text-align: center;
