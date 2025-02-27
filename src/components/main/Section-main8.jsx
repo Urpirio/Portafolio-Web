@@ -84,13 +84,9 @@ var change_BtnSelect;
 //funcion para enviar los datos a mi correo electronico.
 
 
-    const HandleSubmit = ()=>{
-        document.getElementById('First_name').value = '';
-        document.getElementById('Last_name').value = '';
-        document.getElementById('Email_address').value = '';
-        document.getElementById('Phone_number').value = '';
-        document.getElementById('message').value = '';
-    };
+    // const HandleSubmit = ()=>{
+        
+    // };
 
 /*Funcion para el envio del furmulario a una base de datos.*/ ;
 var SendM;
@@ -192,7 +188,7 @@ if (document.getElementById("Phone_number").value == ""){
 };
     return(
         <section className="Section-main8" id="Section-main8">
-            <form onSubmit={HandleSubmit}  action="https://formsubmit.co/urpiriojunior@gmail.com" method="POST"  className="form" id="form" >
+            <form  action="https://formsubmit.co/urpiriojunior@gmail.com" method="POST"  className="form" id="form" >
 
                 <div className="form-div1">
                     <h1>¡Trabajemos juntos!</h1>
@@ -257,6 +253,8 @@ if (document.getElementById("Phone_number").value == ""){
                     <div id="GlobalError" ><p >One or more fields have an error. Please check and try again.</p></div>
                     <div id="GlobalSend" ><p >Thank you for your message. It has been sent.</p></div>
                 </div>
+                <input type="hidden" name="_next" value="https://yourdomain.co/thanks.html"></input>
+                <input type="hidden" name="_captcha" value="false"></input>
             </form>
             <Section_main8P2/>
             
