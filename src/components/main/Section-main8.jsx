@@ -253,7 +253,7 @@ if (document.getElementById("Phone_number").value == ""){
                     <div id="GlobalError" ><p >One or more fields have an error. Please check and try again.</p></div>
                     <div id="GlobalSend" ><p >Thank you for your message. It has been sent.</p></div>
                 </div>
-                <input type="hidden" name="_next" value="https://yourdomain.co/thanks.html"></input>
+                <input type="hidden" name="_next" value="https://www.urpiriodev.online/"></input>
                 <input type="hidden" name="_captcha" value="false"></input>
             </form>
             <Section_main8P2/>
