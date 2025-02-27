@@ -162,14 +162,13 @@ function Structure(){
                 {SectionM2list}
                 </section>
 
-                <section className="Section-main3" id="Section-main3">
+                {/* <section className="Section-main3" id="Section-main3">
                     <Section_main3/>
                     <div  className="Section-main3-div2">
-                        {/* {SectionM3list} */}
                     <div id="pepe" onMouseEnter={Container_sm3_F1}>
                         <Section_main3P2 
-                        title = "Web Development" 
-                        content = "Conducting qualitative and quantitative research to understand user needs, behaviors, and pain points. Utiling methods.." 
+                        title = "Desarrollo Web" 
+                        content = "Realizar investigaciones cualitativas y cuantitativas para comprender las necesidades, comportamientos y puntos débiles de los usuarios. Utilizando métodos..." 
                         link = "" 
                         number = "01" 
                         id = "Container-sm3-1" 
@@ -178,39 +177,18 @@ function Structure(){
 
                     <div onPointerOver={Container_sm3_F2}>
                     <Section_main3P2 
-                    title = "UI/UX Design"
-                    content = "Conducting qualitative and quantitative research to understand user needs, behaviors, and pain points. Utiling methods.."
+                    title = "Diseño UI/UX"
+                    content = "Realizar investigaciones cualitativas y cuantitativas para comprender las necesidades, comportamientos y puntos débiles de los usuarios. Utilizando métodos..."
                     number = "02"
                     link = ""
                     id = "Container-sm3-2" 
                     />
                     </div>
 
-                    <div onPointerOver={Container_sm3_F3}>
-                    <Section_main3P2 
-                    title = "Content Writing"
-                    content = "Conducting qualitative and quantitative research to understand user needs, behaviors, and pain points. Utiling methods.."
-                    number = "03"
-                    link = ""
-                    id = "Container-sm3-3"
-                    />
-                    </div>
-
-                    <div onPointerOver={Container_sm3_F4}>
-                        <Section_main3P2 
-                        title = "Digital Marketing"
-                        content = "Conducting qualitative and quantitative research to understand user needs, behaviors, and pain points. Utiling methods.."
-                        number = "04"
-                        link = ""
-                        id = "Container-sm3-4"
-                        />
-                    </div>
-                    
-
 
 
                     </div>
-                </section>
+                </section> */}
 
                 <section className="Section-main4" id="Section-main4">
                     <Section_main4/>
@@ -223,7 +201,7 @@ function Structure(){
 
                 <Section_main6/>
 
-                <Section_main7/>
+                {/* <Section_main7/> */}
 
                 <Section_main8/>
 
