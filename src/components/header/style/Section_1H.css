@@ -2,6 +2,7 @@ header{
     top: 0;
     position: sticky;
     z-index: 3;
+    box-shadow: 1px 1px 10px 5px #42424214;
     
 }
 .Section-header1{
@@ -35,6 +36,12 @@ header{
     color: white;
     font-size: 18px;
     font-weight: 500;
+    cursor: pointer;
+    transition: 300ms;
+}
+.S-header-div2 nav a:hover{
+    /* opacity: 0.7; */
+    color: #0077b6;
 }
 .S-header-div2 div button{
     height: 1cm;
@@ -42,9 +49,17 @@ header{
     border: none;
     border-radius: 20px;
     font-weight: 600;
+    font-size: 16px;
     color: white;
     background-color: #0077b6;
     box-shadow: 1px 1px 10px 5px #0076b621;
+    cursor: pointer;
+    transition: 300ms;
+}
+.S-header-div2 div button:hover{
+    border: 2px solid #0077b6;
+    background: none;
+    color: #0077b6;
 }
 @media (max-width:1100px) and (min-width: 820px) {
     .S-header-div2 nav{
