@@ -5,7 +5,11 @@ const Section_1H = () => {
 
     const headerlist = SectionDH1.map( H => {
         return <img src={H.Logo}/>
-    })
+    });
+
+    const Contratame = () => {
+        window.location.href = '#Section-main8';
+    }
 
     return(
         <section className="Section-header1">
@@ -15,15 +19,15 @@ const Section_1H = () => {
             </div>
             <div className="S-header-div2">
                 <nav>
-                    <a href="#Section-main3">Services</a>
-                    <a href="#Section-main4">Works</a>
-                    <a href="#Section-main5">Resume</a>
-                    <a href="#Section-main6">Skills</a>
-                    <a href="#Section-main7">Testimonials</a>
-                    <a href="#Section-main8">Contact</a>
+                    <a href="#Section-main3">Servicios</a>
+                    <a href="#Section-main4">Proyectos</a>
+                    <a href="#Section-main5">Educacion</a>
+                    <a href="#Section-main6">Habilidades</a>
+                    {/* <a href="#Section-main7">Testimonials</a> */}
+                    <a href="#Section-main8">Contacto</a>
                 </nav>
                 <div>
-                    <a href=""><button>Hire me!</button></a>
+                    <button onClick={Contratame}>¡Contrátame!</button>
                 </div>
             </div>
         </section>
