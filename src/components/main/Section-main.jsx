@@ -1,5 +1,7 @@
 import SectionIMG from "./Data/SectionIMG";
 import  "./style/section_main.css";
+import PhotoDev from '../header/img/image.png';
+import CV from './Data/Urpirio Junior Moreno Vargas Cv (1) (1).pdf'
 
 const Section_main = () =>{
 
@@ -29,11 +31,11 @@ const Section_main = () =>{
                 <div>
                     <h2>Soy Urpirio Junior</h2>
                     <h1>Desarrollador Web + Diseñador UX</h1>
-                    <img src='https://urpirio.github.io/ImagenesP/WhatsApp%20Image%202025-02-27%20at%201.16.00%20PM.jpeg' alt="Foto de Desarrollador" id="imgDev2" />
+                    <img src={PhotoDev} alt="Foto de Desarrollador" id="imgDev2" />
                     <p>Analizo problemas complejos de la experiencia del usuario para crear soluciones centradas en la integridad que conecten a miles de millones de personas.</p>
                 </div>
                 <div className="S-main-div1-div2">
-                    <a href="src/components/main/Data/Urpirio Junior Moreno Vargas Cv (1) (1).pdf" download="Urpirio Junior Moreno Vargas Cv (1) (1).pdf"><button>Download CV<i class='bx bx-download'></i></button></a>
+                    <a href={CV} download="Urpirio Junior Moreno Vargas Cv (1) (1).pdf"><button>Download CV<i class='bx bx-download'></i></button></a>
                     <div>
                     <i onClick={Instagram} class='bx bxl-instagram' ></i>
                     <i onClick={Linkedin} class='bx bxl-linkedin' ></i>
@@ -42,7 +44,7 @@ const Section_main = () =>{
                 </div>
             </div>
             <div className="S-main-div2">
-                <img src="https://urpirio.github.io/ImagenesP/WhatsApp%20Image%202025-02-27%20at%201.16.00%20PM.jpeg" alt="" />
+                <img src={PhotoDev} alt="Foto de Desarrollador" />
             </div>
         </section>
     )
