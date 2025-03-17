@@ -1,5 +1,6 @@
 import SectionDH1 from "./Data/SectionHeader";
 import "./style/Section_1H.css"
+import logo from './img/Page-logo-P.webp';
 
 const Section_1H = () => {
 
@@ -28,7 +29,7 @@ const Section_1H = () => {
     return(
         <section className="Section-header1">
             <div className="S-header-div1">
-            <img src='https://urpirio.github.io/ImagenesP/Page-logo-P.webp' alt="Logo"/>
+            <img src={logo} alt="Logo"/>
             <h1>UrpirioDev</h1>
             </div>
             <div className="S-header-div2">
